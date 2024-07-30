@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+
+.header{
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(img/portada2.avif);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 10; 
+}
+
+ .header h3{
+    color: #fff;
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    padding: 5px;
+    transition: color 2.5s;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+
+.header h3:hover{
+    color: #e06f1d;
+}
+
+nav{
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-link ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 30px;
+}
+
+.nav-link ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: skyblue;
+    display: block;
+    margin: auto;
+}
+
+.nav-link ul li:hover::after{
+    width: 100px;
+}
+
+.galeria{
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    margin-top: 7.9%;
+}
+
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.galeria img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.producto {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;   
+}
+
+
+
+.producto h1 {
+    font-size: 1.4em;
+    margin: 70px;
+    font-family: 'Brush Script MT', cursive;
+    color: #e06f1d;
+    animation: heartBeat 2s infinite;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row a{
+    text-decoration: none;
+    color: #fff
+}
+
+.categoria {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.categoria:hover .layer {
+    opacity: 1;
+}
+
+.layer h3 {
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    transition: transform 0.5s;
+    transform: translateY(20px);
+}
+
+.categoria:hover .layer h3 {
+    transform: translateY(0);
+}
+
+.layer h3 {
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    transition: transform 0.5s;
+    transform: translateY(20px);
+}
+
+.categoria:hover .layer h3 {
+    transform: translateY(0);
+}
+
+.btn{
+    animation: heartBeat 2s infinite;
+}
+
+.footer { 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #7E3C0E;
+    color: #fff;
+    opacity: 1;
+  }
+  
+  .copyright {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(img/portada2.avif);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+  }
